@@ -1,0 +1,535 @@
+@font-face {
+  font-family: digital;
+  src: url(../fonts/DS-DIGI.TTF);
+  font-weight: normal;
+}
+
+/* ==========================================================================
+   Basis Layout
+   ======================================================================= */
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: url(../images/audio-radio-dial-stereo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background: url(../images/pattern.png) repeat left top transparent fixed;
+}
+
+h1,
+h2,
+h3 {
+  color: #FFF762;
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.status {
+  color: #FFF;
+}
+
+a,
+footer {
+  color: #FFF;
+  text-align: right;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+/* ==========================================================================
+   Logo
+   ======================================================================= */
+div.logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* ==========================================================================
+   Marquee
+   ======================================================================= */
+.marquee {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000;
+  color: rgb(255,247,98);
+}
+
+/* ==========================================================================
+   Header
+   ======================================================================= */
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+header nav li {
+  display: inline;
+}
+
+span.glyphicon-cloud {
+  font-size: 30px;
+  color: #FFF;
+}
+
+/* ==========================================================================
+   Station
+   ======================================================================= */
+section.station {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -400px;
+  font-family: 'digital', Verdana, sans-serif;
+}
+
+/* ==========================================================================
+   Display
+   ======================================================================= */
+article.display {
+  box-shadow: 0 0 5px rgba(233, 198, 80, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  width: 100%;
+  padding: 5px;
+}
+
+/* ==========================================================================
+   Icon (Size)
+   ======================================================================= */
+article.display nav.control span.glyphicon {
+  font-size: 66px;
+  transition: color 0.4s ease 0s;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Status Icon (Size)
+   ======================================================================= */
+article.display span.glyphicon.glyphicon-volume-up,
+article.display span.glyphicon.glyphicon-play,
+article.display span.glyphicon.glyphicon-refresh {
+  font-size: 16px;
+  color: #FFF;
+}
+
+/* ==========================================================================
+   Section (Two columns)
+   ======================================================================= */
+article.display section:first-child,
+article.display section:last-child {
+  display: inline-block;
+  width: 550px;
+}
+
+article.display section:last-child {
+  width: 230px;
+}
+
+/* ==========================================================================
+   Status
+   ======================================================================= */
+span.balance,
+span.volValue {
+  color: #FFF;
+}
+
+dl {
+  display: inline-block;
+}
+
+dl dt {
+  float:left;
+  padding: 0 0 0 5px;
+  width: 30px;
+}
+
+/* ==========================================================================
+   Control
+   ======================================================================= */
+.control {
+  width: 240px;
+  height: 240px;
+}
+
+/* ==========================================================================
+   Control Buttons
+   ======================================================================= */
+article section:last-child .glyphicon-stop,
+article section:last-child .glyphicon-backward,
+article section:last-child .glyphicon-forward,
+article section:last-child .glyphicon-play,
+article section:last-child .glyphicon-chevron-up,
+article section:last-child .glyphicon-chevron-down {
+  position: absolute;
+}
+
+article section:last-child .glyphicon-stop {
+  margin: 128px 84px 0;
+}
+
+article section:last-child .glyphicon-backward {
+  margin: 128px -6px 0;
+}
+
+article section:last-child .glyphicon-forward {
+  margin: 128px 180px 0;
+}
+
+article section:last-child .glyphicon-play {
+  margin: 128px 90px 0;
+}
+
+article section:last-child .glyphicon-chevron-up  {
+  margin: 44px 90px 0;
+}
+
+article section:last-child .glyphicon-chevron-down  {
+  margin: 220px 84px 0;
+}
+
+/* ==========================================================================
+   Glow Neon - Effect
+   ======================================================================= */
+nav span {
+  color:#FFF762;
+}
+
+header nav span:hover {
+  color: #ffffff;
+  text-shadow: 0 0 4px #fff;
+}
+
+article nav.control span:hover {
+  color:#ffffff;
+  -webkit-animation: neon 1.5s ease-in-out;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff,
+    0 0 20px  #fff,
+    0 0 30px  #fff,
+    0 0 40px  #FFF762,
+    0 0 70px  #FFF762,
+    0 0 80px  #FFF762,
+    0 0 100px #FFF762,
+    0 0 150px #FFF762;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #FFF762,
+    0 0 35px #FFF762,
+    0 0 40px #FFF762,
+    0 0 50px #FFF762,
+    0 0 75px #FFF762;
+  }
+}
+
+@-moz-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff,
+    0 0 20px  #fff,
+    0 0 30px  #fff,
+    0 0 40px  #FFF762,
+    0 0 70px  #FFF762,
+    0 0 80px  #FFF762,
+    0 0 100px #FFF762,
+    0 0 150px #FFF762;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #FFF762,
+    0 0 35px #FFF762,
+    0 0 40px #FFF762,
+    0 0 50px #FFF762,
+    0 0 75px #FFF762;
+  }
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff,
+    0 0 20px  #fff,
+    0 0 30px  #fff,
+    0 0 40px  #FFF762,
+    0 0 70px  #FFF762,
+    0 0 80px  #FFF762,
+    0 0 100px #FFF762,
+    0 0 150px #FFF762;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #FFF762,
+    0 0 35px #FFF762,
+    0 0 40px #FFF762,
+    0 0 50px #FFF762,
+    0 0 75px #FFF762;
+  }
+}
+
+/* ==========================================================================
+   Progress Bar
+   ======================================================================= */
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  width: 150px;
+  height: 17px;
+  border-radius: 5px;
+  padding: 4px;
+  background: #000;
+  -webkit-box-shadow: 0 1px 0 hsla(0,0%,100%,.1);
+  -moz-box-shadow: 0 1px 0 hsla(0,0%,100%,.1);
+  /*Disabled for now.
+  -webkit-box-reflect: below -3px -webkit-radial-gradient( 50% 70%, 50% 25%, hsla(0,0%,0%,.2) 0%, hsla(0,0%,0%,0) 95% );*/
+}
+
+progress::-webkit-progress-bar  {
+  background-color: hsl(200,10%,14%);
+  background-size: 2px 5px;
+  background-image: 	-webkit-linear-gradient( 0deg,  hsla(0,0%,0%,.4) 1px, hsla(0,0%,0%,0) 1px ),
+  -webkit-linear-gradient( 90deg, hsla(0,0%,0%,1) 1px, hsla(0,0%,0%,0) 1px );
+}
+
+/* Mozilla */
+progress::-moz-progress-bar {
+  background-color: hsl(57, 100%, 69%);
+  background-size: 2px 5px;
+  background-image: 	-moz-linear-gradient( 0deg,  hsla(0,0%,0%,.4) 1px, hsla(0,0%,0%,0) 1px ),
+  -moz-linear-gradient( 90deg, hsla(0,0%,0%,1) 1px, hsla(0,0%,0%,0) 1px );
+}
+
+progress::-webkit-progress-value {
+  background-size: inherit;
+  background-image: 	inherit;
+  background-color: hsl(57, 100%, 69%);
+  -webkit-box-shadow: 0 0 10px 2px hsla(0,0%,100%,.4);
+  -webkit-transition: width 1s cubic-bezier(.20, .10, .20, 1);
+}
+
+/* Mozilla */
+progress::value {
+  background-size: inherit;
+  background-image: 	inherit;
+  background-color: hsl(57, 100%, 69%);
+  -moz-box-shadow: 0 0 10px 2px hsla(0,0%,100%,.4);
+  -moz-transition: width 1s cubic-bezier(.20, .10, .20, 1);
+}
+
+progress:hover::-webkit-progress-value {
+  /*In the real world, just change the element's value, this is just a hack for this demo.*/
+  width: 100% !important;
+  -webkit-transition: width .3s cubic-bezier(.20, .10, .20, 1);
+}
+
+/* Mozilla */
+progress:hover progress::value {
+  /*In the real world, just change the element's value, this is just a hack for this demo.*/
+  width: 100% !important;
+  -moz-transition: width .3s cubic-bezier(.20, .10, .20, 1);
+}
+
+/* ==========================================================================
+   Pulse Effect (Cloud)
+   ======================================================================= */
+.pulse {
+  -webkit-animation: pulse 1s linear infinite;
+  -moz-animation: pulse 1s linear infinite;
+  -ms-animation: pulse 1s linear infinite;
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: rgba(233, 198, 80, 1);
+  }
+  90% {
+    color: rgba(255,0,0,0.0);
+  }
+  100% {
+    color: rgba(255,255,255,1.0);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    color: rgba(233, 198, 80, 1);
+  }
+  90% {
+    color: rgba(255,0,0,0.0);
+  }
+  100% {
+    color: rgba(255,255,255,1.0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    color: rgba(233, 198, 80, 1);
+  }
+  90% {
+    color: rgba(255,0,0,0.0);
+  }
+  100% {
+    color: rgba(255,255,255,1.0);
+  }
+}
+
+@-ms-keyframes pulse {
+  0% {
+    color: rgba(233, 198, 80, 1);
+  }
+  90% {
+    color: rgba(255, 0, 0, 0.0);
+  }
+  100% {
+    color: rgba(255, 255, 255, 1.0);
+  }
+}
+
+/* ==========================================================================
+   Blur Effect (Stop Button)
+   ======================================================================= */
+.stopEffect {
+  text-align: center;
+  color: #fff;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  -webkit-animation: blur 2s ease-out infinite;
+  -moz-animation: blur 3.75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #E9C650,
+    0px 0px 150px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px -10px 100px #E9C650,
+    0px -10px 100px #E9C650;}
+}
+
+@-moz-keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #E9C650,
+    0px 0px 150px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px -10px 100px #E9C650,
+    0px -10px 100px #E9C650;}
+}
+
+@-webkit-keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+    0px 0px 10px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 25px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #fff,
+    0px 0px 50px #E9C650,
+    0px 0px 150px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px 10px 100px #E9C650,
+    0px -10px 100px #E9C650,
+    0px -10px 100px #E9C650;}
+}
+
+/* ==========================================================================
+   Shimmer Shine Effect (Label Station Number)
+   ======================================================================= */
+.shimmer {
+  display: inline-block;
+  color: #FFF762;
+  background: #FFF762 -webkit-gradient(linear, 100% 0, 0 0, from(#FFF762), color-stop(0.5, #ffffff), to(#FFF762));
+  background-position: -4rem top; /*50px*/
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-name: shimmer;
+  -webkit-animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-background-size: 4rem 100%; /*50px*/
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -4rem top; /*50px*/
+  }
+
+  70% {
+    background-position: 12.5rem top; /*200px*/
+  }
+
+  100% {
+    background-position: 12.5rem top; /*200px*/
+  }
+}
+
+

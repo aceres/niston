@@ -1,0 +1,79 @@
+.clock {
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+}
+
+.clock > * {
+  text-align: right;
+}
+
+.clock ul {
+  list-style: none;
+}
+
+.clock ul li {
+  display: inline;
+  font-size: 16px;
+  text-align: left;
+}
+
+#point {
+  position: relative;
+  animation: move 1s ease infinite;
+  -moz-animation: move 1s ease infinite;
+  -webkit-animation: move 1s ease infinite;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/* Simple Animation */
+@-webkit-keyframes move {
+  0% {opacity: 1.0;
+    text-shadow: 0 0 20px #FFF762;
+  }
+
+  50% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #FFF762;
+  }
+}
+
+@-moz-keyframes move {
+  0% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #FFF762;
+  }
+
+  50% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #FFF762;
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #FFF762;
+  }
+
+  50% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #FFF762;
+  }
+}
