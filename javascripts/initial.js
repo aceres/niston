@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  /*
+  *  Show Clock
+  * */
   showDigitalClock();
   showPlayButton();
 });
